@@ -1,4 +1,3 @@
-
 text_menu_request = """
 ===========================================
                SEND A REQUEST
@@ -13,6 +12,6 @@ Choose HTTP Method:
   [6] OPTIONS
   [7] HEAD
 
+-------------------------------------------
 Select Method:
-
 """

@@ -4,9 +4,7 @@ text_menu = """
 ===========================================
 
 [1] Send a Request
-[2] Manage Saved Requests
-[3] View Request History
-[4] Settings
+[2] View Request History
 [0] Exit
 
 -------------------------------------------
