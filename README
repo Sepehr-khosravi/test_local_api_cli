@@ -106,7 +106,6 @@ colorama
  ├── core/
  │    ├── sender.py
  │    ├── storage.py
- │    └── validator.py
  ├── data/
  │    ├── saved_requests.json
  │    ├── history.json
