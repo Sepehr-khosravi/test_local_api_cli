@@ -1,0 +1,140 @@
+🚀 Local API Testing CLI (Python)
+
+A fast, lightweight, terminal-based tool for sending HTTP requests to your local API while developing backend applications — built entirely in Python.
+
+Designed to be simple, elegant, and fast — without needing heavy GUI tools like Postman or Hoppscotch.
+
+✨ Features
+
+📡 Send HTTP requests (GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD)
+
+🧭 Interactive text-based menu system
+
+📝 Custom headers & JSON bodies
+
+💾 Save requests and execute them anytime
+
+📜 View request history
+
+⚙️ Configurable settings (default host, color output, etc.)
+
+🔄 Simple & clean terminal UI
+
+📸 Preview (Menu UI)
+===========================================
+        LOCAL API TESTING CLI TOOL
+===========================================
+
+[1] Send a Request
+[2] Manage Saved Requests
+[3] View Request History
+[4] Settings
+[0] Exit
+
+🧰 Installation
+1. Clone the repository
+git clone https://github.com/your-username/your-project-name.git
+cd your-project-name
+
+2. Create a virtual environment (recommended)
+python -m venv venv
+
+
+Activate it:
+
+Windows
+
+venv\Scripts\activate
+
+
+Linux/macOS
+
+source venv/bin/activate
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Run the CLI
+python main.py
+
+🧪 Usage
+
+Start the CLI and follow the interactive menu.
+
+Sending a Request
+
+Choose an HTTP method
+
+Enter the URL
+
+Add any headers
+
+Add a JSON body (optional)
+
+View full response details:
+status, headers, timing, and body
+
+Saved Requests
+
+Store frequently-used API calls in a JSON file.
+Re-run them instantly.
+
+View History
+
+Every request you send is automatically logged.
+
+📦 Dependencies
+
+Typical dependencies (from requirements.txt):
+
+requests
+colorama
+
+
+(Your project may include more depending on UI style.)
+
+📂 Project Structure
+/src
+ ├── menus/
+ │    ├── main_menu.py
+ │    ├── request_menu.py
+ │    ├── history_menu.py
+ │    └── settings_menu.py
+ ├── core/
+ │    ├── sender.py
+ │    ├── storage.py
+ │    ├── formatter.py
+ │    └── validator.py
+ ├── data/
+ │    ├── saved_requests.json
+ │    ├── history.json
+ │    └── settings.json
+ └── main.py
+
+✔️ Roadmap
+
+ Add environment support (dev, prod, local)
+
+ Add GraphQL support
+
+ Add cURL command export
+
+ Add syntax-highlighted JSON responses
+
+ Add plugin/extensions system
+
+ Add async request mode
+
+🤝 Contributing
+
+Contributions are welcome!
+Open an issue or create a pull request if you want to help improve the project.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+⚠️ Status
+
+This project is not still complete.
+Expect missing features, changes in structure, and ongoing development.
