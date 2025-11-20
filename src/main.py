@@ -1,19 +1,14 @@
-text_menu = """
-===========================================
-        LOCAL API TESTING CLI TOOL
-===========================================
+#pakages
+from menus.main_menu import text_menu
+#request package :
+from core.sender import send_request
 
-[1] Send a Request
-[2] Manage Saved Requests
-[3] View Request History
-[4] Settings
-[0] Exit
-
--------------------------------------------
-Select an option:
-
-"""
+# main menu:
+print(text_menu)
 
 while True:
-    print(">")
-    command = input(text_menu)
+    command = int(input(">"))
+    if command == 1:
+        send_request()
+    elif command == 2:
+        pass#keep going here
