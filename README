@@ -1,24 +1,27 @@
 🚀 Local API Testing CLI (Python)
 
-A fast, lightweight, terminal-based tool for sending HTTP requests to your local API while developing backend applications — built entirely in Python.
+A fast, lightweight, terminal-based tool for sending HTTP requests to your local API during backend development — built entirely with Python.
 
-Designed to be simple, elegant, and fast — without needing heavy GUI tools like Postman or Hoppscotch.
+This tool is designed to be simple, elegant, and fast — without the heavy UI of Postman or Hoppscotch.
+Perfect for developers who love working inside the terminal.
 
 ✨ Features
 
 📡 Send HTTP requests (GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD)
 
-🧭 Interactive text-based menu system
+🎛 Interactive menu-based CLI
 
 📝 Custom headers & JSON bodies
 
-💾 Save requests and execute them anytime
+💾 Save requests and run them again
 
 📜 View request history
 
-⚙️ Configurable settings (default host, color output, etc.)
+⚙️ Configurable settings (colors, default host, timeout, etc.)
 
-🔄 Simple & clean terminal UI
+🔄 Clean & minimal terminal UI
+
+🔍 Readable request/response formatting
 
 📸 Preview (Menu UI)
 ===========================================
@@ -26,9 +29,7 @@ Designed to be simple, elegant, and fast — without needing heavy GUI tools lik
 ===========================================
 
 [1] Send a Request
-[2] Manage Saved Requests
 [3] View Request History
-[4] Settings
 [0] Exit
 
 🧰 Installation
@@ -43,12 +44,9 @@ python -m venv venv
 Activate it:
 
 Windows
-
 venv\Scripts\activate
 
-
 Linux/macOS
-
 source venv/bin/activate
 
 3. Install dependencies
@@ -59,7 +57,7 @@ python main.py
 
 🧪 Usage
 
-Start the CLI and follow the interactive menu.
+The CLI guides you interactively.
 
 Sending a Request
 
@@ -67,31 +65,37 @@ Choose an HTTP method
 
 Enter the URL
 
-Add any headers
+Add headers (optional)
 
-Add a JSON body (optional)
+Add JSON body (optional for GET)
 
-View full response details:
-status, headers, timing, and body
+Receive a structured response:
+
+status code
+
+headers
+
+body
+
+response time
 
 Saved Requests
 
-Store frequently-used API calls in a JSON file.
-Re-run them instantly.
+Store common requests inside saved_requests.json and re-run them anytime.
 
-View History
+Request History
 
-Every request you send is automatically logged.
+Every request is automatically stored inside history.json.
 
 📦 Dependencies
 
-Typical dependencies (from requirements.txt):
+From requirements.txt:
 
 requests
 colorama
 
 
-(Your project may include more depending on UI style.)
+(More may be added later as the project evolves.)
 
 📂 Project Structure
 /src
@@ -99,42 +103,43 @@ colorama
  │    ├── main_menu.py
  │    ├── request_menu.py
  │    ├── history_menu.py
- │    └── settings_menu.py
  ├── core/
  │    ├── sender.py
  │    ├── storage.py
- │    ├── formatter.py
  │    └── validator.py
  ├── data/
  │    ├── saved_requests.json
  │    ├── history.json
- │    └── settings.json
  └── main.py
 
 ✔️ Roadmap
 
- Add environment support (dev, prod, local)
+Add environment support (dev, local, prod)
 
- Add GraphQL support
+Add GraphQL request support
 
- Add cURL command export
+Add cURL export
 
- Add syntax-highlighted JSON responses
+Add syntax-highlighted response JSON
 
- Add plugin/extensions system
+Add plugin/extension system
 
- Add async request mode
+Add async request engine
+
+Add auto-completion & command-line flags
+
+Add request collections (like Postman)
 
 🤝 Contributing
 
 Contributions are welcome!
-Open an issue or create a pull request if you want to help improve the project.
+Feel free to open issues or submit pull requests to help improve this tool.
 
 📜 License
 
-This project is licensed under the MIT License.
+Licensed under the MIT License.
 
 ⚠️ Status
 
-This project is not still complete.
-Expect missing features, changes in structure, and ongoing development.
+This project is not yet fully complete, and
+there may still be several bugs as development continues.
