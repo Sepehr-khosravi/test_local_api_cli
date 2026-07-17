@@ -4,6 +4,8 @@ from core.sender import send_request
 from core.storage import show_history
 
 
+#print("Hello, World");
+
 def get_command():
     try:
         return int(input("> "))
